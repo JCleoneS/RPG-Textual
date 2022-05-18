@@ -192,8 +192,27 @@ public class RpgTextual {
 
         }
 
-        System.out.printf("Você conseguiu derrotar os ladrões, e conseguiu a informação que precisava, vão seguir para próxima vila, lá existem%n"
-                        + "menos guardas que na vila anterior, %n%n");
+        System.out.printf("Você conseguiu derrotar os ladrões e conseguiu a informação que precisava, para seguir seu caminho%n"
+                        + "os ladrões informaram também que na proxima vila existem menos guardas fazendo honda.%n%n");
+
+        System.out.printf("O caminho que os ladrões passaram tem um obstaculo, você precisa atravessar um rio, o rio não é tão grande%n"
+                        + "mas também não é tão pequeno para se atravessar nadando.%nProximo de você tem algumas arvores que são%n"
+                        + "perfeitas para construir um bote/barco.%n%n"
+
+                        + "Agora que você conseguiu atravessar o rio, você consegue avistar a proxima vila,%n"
+                        + "e como os ladrões aviam dito, não existem muitos guardas ali.%n%n");
+
+        System.out.println("Logo chegando lá as pessoas ");
+
+
+
+
+
+
+
+
+
+
 
 
     }
