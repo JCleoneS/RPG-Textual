@@ -15,7 +15,7 @@ public class RpgTextual {
             //-- Variáveis
 
         int jogador = 0, resposta = 0, pontuacao = 0;
-        int armadura = 0, espada = 0;
+        int armadura = 0, arma = 0;
 
    //-----------------------------------------------
 
@@ -120,7 +120,7 @@ public class RpgTextual {
         if(resposta == 3){
 
             pontuacao += 250;
-            espada = 1;
+            arma = 1;
             System.out.printf("Você e seus homens acabam de ganhar 250 pontos e uma espada TOP%n%n");
 
         }
@@ -158,7 +158,7 @@ public class RpgTextual {
                         + "Embora seus guardas tenham armas e armaduras melhores, os ladrões são habilidosos e rapidos.%n"
                         + "Para evitar que você perca mais homens, responda corretamente:%n%n");
 
-        System.out.printf("Em SQL Server para que uma PROCEDURE é utilizada?%n"
+        System.out.printf("Em SQL Serverm para que uma PROCEDURE é utilizada?%n"
                         + "1) Uma procedure é um bloco de comandos ou instruções SQL organizados para executar uma ou mais tarefas.%n"
                         + "2) Uma procedure é um comando utilizado para fazer consultas.%n"
                         + "3) Uma procedure é utilizada para fazer update em tabelas/colunas.%n"
@@ -171,7 +171,7 @@ public class RpgTextual {
         if(resposta == 6){
 
             pontuacao += 197;
-            espada += 1;
+            arma += 1;
             System.out.printf("Boa, já consegue entrar na area de banco de dados, hahaha, sua arma melhorou, sua arma e ganhou 197 pontos.%n"
                             + "Sua pontuação geral é de: " + pontuacao + "%n%n");
 
@@ -193,25 +193,54 @@ public class RpgTextual {
         }
 
         System.out.printf("Você conseguiu derrotar os ladrões e conseguiu a informação que precisava, para seguir seu caminho%n"
-                        + "os ladrões informaram também que na proxima vila existem menos guardas fazendo honda.%n%n");
+                        + "os ladrões informaram também que na proxima vila existem menos guardas fazendo ronda.%n%n");
 
         System.out.printf("O caminho que os ladrões passaram tem um obstaculo, você precisa atravessar um rio, o rio não é tão grande%n"
                         + "mas também não é tão pequeno para se atravessar nadando.%nProximo de você tem algumas arvores que são%n"
                         + "perfeitas para construir um bote/barco.%n%n"
 
                         + "Agora que você conseguiu atravessar o rio, você consegue avistar a proxima vila,%n"
-                        + "e como os ladrões aviam dito, não existem muitos guardas ali.%n%n");
+                        + "e como os ladrões haviam dito, não existem muitos guardas ali.%n%n");
 
-        System.out.println("Logo chegando lá as pessoas ");
+        System.out.printf("Logo que você chega lá, você percebe que as pessoas não se sentem à vontade com os guardas%n"
+                        + "um grupo de pessoas conversou com você e acabou lhe mostrando o quanto estão insatisfeitas%n"
+                        + "com a presença dos seus inimigos, então entorno de 10 homens se juntaram a você%n%n");
 
+        System.out.printf("O plano é o seguinte, você e seus homens irão cercar os guardas em uma taverna que eles%n"
+                        + "frequentam todos os dias.%nPara que o plano de certo, responda corretamente:%n%n");
 
+        System.out.printf("para que serve o comando 'nextInt()' em java?%n"
+                        + "1) Para ler um dado Boolean.%n"
+                        + "2) Para ler um dado Float.%n"
+                        + "3) Para ler um dado Númeric.%n"
+                        + "4) Para ler um dado Inteiro.%n"
+                        + "5) Todas as opções estão corretas.%n"
+                        + "6) Todas as opções estão incorretas.%n%n");
+        resposta = sc.nextInt();
 
+        if(resposta == 4){
 
+            arma += 1;
+            armadura += 1;
+            System.out.println("Isso ai, o comando serve para receber numeros inteiros.");
+            System.out.printf("Você conseguiu exterminar todos os guardas e conquistou a vila.%n"
+                            + "o reino inimigo está logo após as montanhas, junte seus homens e vamos marchar.%n"
+                            + "Você melhorou sua armadura e sua arma.");
 
+        }
 
+        else if(resposta < 0 || resposta > 6){
 
+            System.out.printf("Pô bicho, resposta inválida?! AFF%n%n");
 
+        }
 
+        else{
+
+            System.out.println("Resposta incorreta.");
+            System.out.printf("Você não conseguiu concluir o plano");
+
+        }
 
 
 
